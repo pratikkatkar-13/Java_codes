@@ -1,63 +1,9 @@
-package Codes;
+package Hacker_rank;
+
 import java.util.*;
 
-class DepartmentalStore {
-    private String storeId;
-    private String storeName;
-    private String location;
-    private int noOfWorkers;
-    private int rating;
 
-    public DepartmentalStore(String storeId, String storeName, String location, int noOfWorkers, int rating) {
-        this.storeId = storeId;
-        this.storeName = storeName;
-        this.location = location;
-        this.noOfWorkers = noOfWorkers;
-        this.rating = rating;
-    }
-
-    public String getStoreId() {
-        return storeId;
-    }
-
-    public void setStoreId(String storeId) {
-        this.storeId = storeId;
-    }
-
-    public String getStoreName() {
-        return storeName;
-    }
-
-    public void setStoreName(String storeName) {
-        this.storeName = storeName;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public int getNoOfWorkers() {
-        return noOfWorkers;
-    }
-
-    public void setNoOfWorkers(int noOfWorkers) {
-        this.noOfWorkers = noOfWorkers;
-    }
-
-    public int getRating() {
-        return rating;
-    }
-
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
-}
-
-public class Library {
+public class File_3 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -116,5 +62,62 @@ public class Library {
 
         matched.sort(Comparator.comparingInt(DepartmentalStore::getRating));
         return matched.toArray(new DepartmentalStore[0]);
+    }
+}
+
+
+class DepartmentalStore {
+    private String storeId;
+    private String storeName;
+    private String location;
+    private int noOfWorkers;
+    private int rating;
+
+    public DepartmentalStore(String storeId, String storeName, String location, int noOfWorkers, int rating) {
+        this.storeId = storeId;
+        this.storeName = storeName;
+        this.location = location;
+        this.noOfWorkers = noOfWorkers;
+        this.rating = rating;
+    }
+
+    public String getStoreId() {
+        return storeId;
+    }
+
+    public void setStoreId(String storeId) {
+        this.storeId = storeId;
+    }
+
+    public String getStoreName() {
+        return storeName;
+    }
+
+    public void setStoreName(String storeName) {
+        this.storeName = storeName;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getNoOfWorkers() {
+        return noOfWorkers;
+    }
+
+    public void setNoOfWorkers(int noOfWorkers) {
+        this.noOfWorkers = noOfWorkers;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 }
